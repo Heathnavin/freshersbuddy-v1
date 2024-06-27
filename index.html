@@ -3,48 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Portal</title>
-    <link rel="stylesheet" href="empPortal.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="/images/MicrosoftTeams-image (1).png" alt="Logo">
-        </div>
-        <nav class="nav-tabs">
-            <a href="#">How</a>
-            <a href="#">What</a>
-            <a href="#">Where</a>
-            <a href="#">When</a>
-            <a href="#">Who</a>
-        </nav>
-        <div class="user-name">
-            <!-- <span><i class="ri-user-line"></i>User Name</span> -->
-            User Name
-        </div>
-    </header>
-    <div class="content">
-        <div class="box">
-            <div class="box-left">
-                <!-- Content for left part of the box -->
-                <h2>#FreshersBuddy</h2>
-                <p>
-                    We are glad to have you here. This is the left side content 
-                    where you can provide an introduction or any important information 
-                    that you want your users to see first. Enjoy exploring our website and 
-                    feel free to contact us with any questions.
-                </p>
-            </div>
-            <div class="box-right">
-                <!-- Content for right part of the box with an image -->
-                <div class="image-container">
-                    <div class="image-wrapper">
-                        <img src="/images/pic1_Transparent.png" alt="Asymmetric Shape Image">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseBox" class="response-box"></div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
